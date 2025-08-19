@@ -9,7 +9,7 @@ import { WeatherForecast } from '@/components/weather-forecast'
 import { useGeolocation } from '@/hooks/use-geolocation'
 import { useForecastQuery, useReverseGeocodeQuery, useWeatherQuery } from '@/hooks/use-weather'
 import { AlertTriangle, MapPin, RefreshCw } from 'lucide-react'
-import React from 'react'
+
 
 const WeatherDashboard = () => {
 

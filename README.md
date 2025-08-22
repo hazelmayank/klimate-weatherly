@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+SkyCast - Weatherly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Demo](https://skycast-weatherly.vercel.app) | [GitHub Repository](https://github.com/hazelmayank/klimate-weatherly)
 
-Currently, two official plugins are available:
+SkyCast - Weatherly is a modern, responsive weather application that provides real-time weather updates and forecasts for any location in the world. Built with React, Vite, TanStack Query (React Query), and shadcn/ui, it offers a smooth, fast, and interactive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Search weather by city or location
+- Real-time weather updates
+- Detailed weather information:
+  - Temperature
+  - Humidity
+  - Wind speed
+  - Weather conditions (Sunny, Rainy, Cloudy, etc.)
+- Clean and responsive UI using *shadcn/ui*
+- Efficient data fetching and caching with *React Query*
+- Lightweight and fast, thanks to Vite
+- Deployed on Vercel for instant access
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- *Frontend:* React + Vite  
+- *State Management / Data Fetching:* TanStack Query (React Query)  
+- *UI Components:* shadcn/ui  
+- *API:* OpenWeatherMap (or specify if different)  
+- *Deployment:* Vercel
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+git clone https://github.com/hazelmayank/klimate-weatherly.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Navigate to the project directory:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+
+cd klimate-weatherly
+
+3. Install dependencies:
+
+
+
+npm install
+
+4. Start the development server:
+
+
+
+npm run dev
+
+5. Open http://localhost:5173 in your browser.
+
+
+
+Usage
+
+Enter a city name in the search bar to view its current weather and forecast.
+
+The UI updates dynamically with weather conditions and icons.
+
+
+Contributing
+
+Contributions are welcome! If you find a bug or want to suggest a feature, please open an issue or submit a pull request.
